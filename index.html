@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <!-- Google Tag Manager -->
+<!-- Google tag (gtag.js) -->
+          <meta name="robots" content="noindex, nofollow">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FTBVD15QFE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FTBVD15QFE');
+</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="utf-8">
+    <title>뉴시즌 블루레이</title>
+    <style>
+        /* Reset */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%; /* 전체 화면 높이 */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column; /* 수직 정렬 */
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-around; /* 버튼 간격 균등 분배 */
+            align-items: center;
+            background-color: #333;
+            height: 10%; /* 전체 화면의 상위 10% 차지 */
+            color: white;
+        }
+
+        .navbar button {
+            flex: 1;
+            padding: 10px;
+            margin: 5px;
+            background-color: #444;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+
+        .navbar button:hover {
+            background-color: #555;
+        }
+
+        iframe#content-frame {
+            flex: 1;
+            width: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KM4QKZFS" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- 네비게이션 바 -->
+    <div class="navbar">
+        <button onclick="changeIframe('index9.html')">뉴시즌 블루레이</button>
+        <button onclick="changeIframe('index7.html')">뉴뉴 시즌 립</button>
+        <button onclick="changeIframe('index2.html')">뉴시즌 더빙</button>
+        <button onclick="changeIframe('index3.html')">사라제인 어드벤처</button>
+        <button onclick="changeIframe('index8.html')">올닥</button>
+        <button onclick="changeIframe('index4.html')">올닥 스페셜</button>
+        <button onclick="changeIframe('index6.html')">토치우드</button>
+        <button onclick="changeIframe('index5.html')">추천 걸작선</button>
+        <a href="https://hits.seeyoufarm.com">
+            <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fgirinb%2Fhit-counter&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false" alt="Hits counter"/>
+        </a>
+    </div>
+
+    <!-- 콘텐츠를 보여줄 iframe -->
+    <iframe id="content-frame" src="index9.html"></iframe>
+
+    <script>
+        // iframe의 src를 변경하는 함수
+        function changeIframe(page) {
+            document.getElementById('content-frame').src = page;
+        }
+    </script>
+</body>
+</html>
